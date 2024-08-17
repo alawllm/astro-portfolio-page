@@ -1,14 +1,27 @@
- <header class="bg-white">
-        <div class="mx-auto flex items-center justify-between py-4 px-6">
-            <div class="text-2xl font-bold">
-                <a href="index.html" class="text-gray-800 hover:text-indigo-500">MyLogo</a>
-            </div>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="text-gray-600 hover:text-indigo-500">About</a></li>
-                    <li><a href="#projects" class="text-gray-600 hover:text-indigo-500">Projects</a></li>
-                    <li><a href="#contact" class="text-gray-600 hover:text-indigo-500">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+---
+import ThemeToggler from "./ui/ThemeToggler.astro";
+---
+
+<header>
+  <div class="mx-auto flex items-center justify-between py-4 px-6">
+    <div class="text-2xl font-bold">Logo</a
+      >
+    </div>
+    <nav>
+      <ul class="flex space-x-8 items-center">
+        <li>
+          <a href="#about" class="hover:text-indigo-500">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-indigo-500"
+            >Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-indigo-500"
+            >Contact</a>
+        </li>
+        <li class="cursor-pointer"><ThemeToggler /></li>
+      </ul>
+    </nav>
+  </div>
+</header>
