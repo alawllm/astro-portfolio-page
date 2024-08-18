@@ -1,24 +1,21 @@
 ---
 import ThemeToggler from "./ui/ThemeToggler.astro";
+import LogoNavbar from "./ui/LogoNavbar.astro";
 ---
 
-<header>
+<header id="header">
   <div class="mx-auto flex items-center justify-between py-4 px-6">
-    <div class="text-2xl font-bold">Logo</a
-      >
-    </div>
+    <div><LogoNavbar /></div>
     <nav>
       <ul class="flex space-x-8 items-center">
         <li>
           <a href="#about" class="hover:text-indigo-500">About</a>
         </li>
         <li>
-          <a href="#projects" class="hover:text-indigo-500"
-            >Projects</a>
+          <a href="#projects" class="hover:text-indigo-500">Projects</a>
         </li>
         <li>
-          <a href="#contact" class="hover:text-indigo-500"
-            >Contact</a>
+          <a href="#contact" class="hover:text-indigo-500">Contact</a>
         </li>
         <li class="cursor-pointer"><ThemeToggler /></li>
       </ul>

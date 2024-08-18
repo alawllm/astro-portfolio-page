@@ -3,14 +3,16 @@ import Layout from "../layouts/Layout.astro";
 import About from "../components/About.astro";
 import Contact from "../components/Contact.astro";
 import Projects from "../components/Projects.astro";
+import ArrowBackToTop from "../components/ui/ArrowBackToTop.astro";
 ---
 
 <Layout title="Astro portfolio">
   <main>
     <div class="flex flex-col mx-auto">
       <About />
-      <Contact />
       <Projects />
+      <Contact />
+	  <ArrowBackToTop/>
     </div>
   </main>
 </Layout>
