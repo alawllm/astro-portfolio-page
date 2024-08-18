@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro";
+import Header from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 
 interface Props {
@@ -19,7 +19,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="mx-auto max-w-screen-xl bg-white text-black px-10 md:px-32 py-4 md:py-8 container dark:bg-slate-900 dark:text-white">
+  <body class="mx-auto max-w-screen-xl bg-white text-black px-10 md:px-32 py-4 md:py-8 container dark:bg-black dark:text-white">
     <Header />
     <slot />
     <Footer/>

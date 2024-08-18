@@ -1,0 +1,20 @@
+---
+import ThemeToggler from "./ui/icons/ThemeToggler.astro";
+import LogoNavbar from "./ui/icons/LogoNavbar.astro";
+import NavbarItem from "./ui/NavbarItem.astro";
+---
+
+<header id="header">
+  <div
+    class="mx-auto flex items-center justify-between py-4 px-6 transition-colors duration-700">
+    <div><LogoNavbar /></div>
+    <nav>
+      <ul class="flex space-x-8 items-center">
+        <NavbarItem href="#about" name="about" />
+        <NavbarItem href="#projects" name="projects" />
+        <NavbarItem href="#contact" name="contact" />
+        <li class="cursor-pointer"><ThemeToggler /></li>
+      </ul>
+    </nav>
+  </div>
+</header>
