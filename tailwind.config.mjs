@@ -7,7 +7,7 @@ export default {
       colors: {
         black: "#232423",
         white: "#fff",
-        secondary: "#1f6eed",
+        secondary: "#1183f5",
       },
     },
   },
