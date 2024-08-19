@@ -13,16 +13,20 @@ const { title } = Astro.props;
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="Great, optimized description of my site. It is an example of a simple portfolio page in Astro."
+    />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://astro-portfolio-al.netlify.app" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="mx-auto max-w-screen-xl bg-white text-black px-10 md:px-32 py-4 md:py-8 container dark:bg-black dark:text-white">
+  <body
+    class="mx-auto max-w-screen-xl bg-white text-black px-10 md:px-32 py-4 md:py-8 container dark:bg-black dark:text-white">
     <Header />
     <slot />
-    <Footer/>
+    <Footer />
     <style>
       :global(html) {
         scroll-behavior: smooth;
