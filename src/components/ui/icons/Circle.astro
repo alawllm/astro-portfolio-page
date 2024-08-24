@@ -1,13 +1,13 @@
 <div
   id="circle"
-  class="absolute w-20 h-20 border-solid border-2 border-blue-400 z-90 rounded-full pointer-events-none transition-transform duration-100 ease">
+  class="z-90 ease pointer-events-none absolute h-20 w-20 rounded-full border-2 border-solid border-blue-400 transition-transform duration-100">
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener('DOMContentLoaded', () => {
     let mousePosX = 0,
       mousePosY = 0,
-      mouseCircle = document.getElementById("circle");
+      mouseCircle = document.getElementById('circle');
 
     document.onmousemove = (e) => {
       mousePosX = e.pageX;
@@ -24,13 +24,11 @@
       revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
       revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
 
-      // Calculate half of the circle's width and height
       const circleWidth = mouseCircle.offsetWidth;
       const circleHeight = mouseCircle.offsetHeight;
 
-      // Update the circle's position to center it on the mouse cursor
-      mouseCircle.style.top = revisedMousePosY - circleHeight / 2 + "px";
-      mouseCircle.style.left = revisedMousePosX - circleWidth / 2 + "px";
+      mouseCircle.style.top = revisedMousePosY - circleHeight / 2 + 'px';
+      mouseCircle.style.left = revisedMousePosX - circleWidth / 2 + 'px';
     }
 
     delayMouseFollow();
