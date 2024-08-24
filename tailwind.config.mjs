@@ -8,6 +8,7 @@ export default {
         black: '#232423',
         white: '#fff',
         secondary: '#1183f5',
+        secondaryDark: '#0d72d6'
       },
       fontFamily: {
         sans: ["Ubuntu"]

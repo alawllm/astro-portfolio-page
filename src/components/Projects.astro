@@ -3,13 +3,13 @@ import ProjectContainer from '@/components/ui/ProjectContainer.astro'
 ---
 
 <section
-  class="mb-12 flex flex-col flex-wrap items-center justify-center gap-8 px-6 lg:mb-0 lg:h-screen"
+  class="flex flex-col flex-wrap items-center justify-center gap-8 px-6 lg:mb-0 lg:h-screen"
   id="projects">
-  <p>Here are my projects</p>
+  <h2 class="mb-10 text-2xl md:mb-4 md:text-3xl">Here are my projects</h2>
   <div class="mx-auto flex flex-col gap-12 lg:flex-row">
     <ProjectContainer name="Project1" />
     <ProjectContainer name="Project2" />
     <ProjectContainer name="Project2" />
   </div>
-  <p class="text-left">See my other projects</p>
+  <a href="" class="hover:text-secondary">See my other projects</a>
 </section>
