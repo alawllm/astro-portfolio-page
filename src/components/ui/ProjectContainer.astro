@@ -1,9 +1,11 @@
 ---
-const { name } = Astro.props
+import ArrowLink from './icons/ArrowLink.astro'
+
+const { name} = Astro.props
 ---
 
 <div
-  class="flex h-32 w-56 rounded-3xl md:h-64 md:w-64 text-2xl text-whit hover:bg-secondary items-center justify-center md:rounded-full bg-secondaryDark border-gray-900 dark:border-white"
->
-  <span>{name}</span>
+  class="gap-4 bg-secondaryDark flex h-44 w-44 flex-col items-center justify-center rounded-full border-gray-900 text-center text-2xl text-white hover:bg-secondary dark:border-white md:h-64 md:w-64">
+  <p class="text-2xl">{name}</p>
+  <ArrowLink fill="fill-white" size="40"/>
 </div>
