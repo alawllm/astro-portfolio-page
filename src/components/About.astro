@@ -1,18 +1,20 @@
+---
+import { Image } from 'astro:assets'
+import aboutImage from '@/assets/about_image.png'
+---
+
 <section
   class="my-14 flex flex-row flex-wrap items-center justify-evenly px-6 lg:my-0 lg:h-screen"
-  id="about"
->
+  id="about">
   <div class="w-full text-center lg:w-1/2 lg:text-left">
-    <p class="mb-2 text-2xl">Hi there!</p>
     <h1 class="text-3xl lg:text-6xl">
       I am a frontend developer living in Berlin
     </h1>
   </div>
   <div class="w-full lg:w-1/2">
-    <img
-      src="../../public/programmer-working-with-php.png"
+    <Image
+      src={aboutImage}
       alt="programmer vector graphics designed by pikisuperstar"
-      loading="lazy"
     />
   </div>
 </section>
