@@ -2,17 +2,21 @@
 import ThemeToggler from '@/components/ui/icons/ThemeToggler.astro'
 import LogoNavbar from '@/components/ui/icons/LogoNavbar.astro'
 import NavbarItem from '@/components/ui/NavbarItem.astro'
+
+const links = [
+  { href: '#about', name: 'about' },
+  { href: '#projects', name: 'projects' },
+  { href: '#contact', name: 'contact' },
+]
 ---
 
 <header id="header">
   <div
-    class="mx-auto flex items-center justify-between px-6 py-4 transition-colors duration-700">
+    class="mx-auto flex items-center justify-between px-2 py-4 transition-colors duration-700 md:px-6 md:py-10">
     <div><LogoNavbar /></div>
     <nav>
       <ul class="flex items-center space-x-8">
-        <NavbarItem href="#about" name="about" />
-        <NavbarItem href="#projects" name="projects" />
-        <NavbarItem href="#contact" name="contact" />
+        {links.map((link) => <NavbarItem href={link.href} name={link.name} />)}
         <li class="cursor-pointer"><ThemeToggler /></li>
       </ul>
     </nav>

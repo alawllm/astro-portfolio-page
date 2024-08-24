@@ -9,6 +9,9 @@ export default {
         white: '#fff',
         secondary: '#1183f5',
       },
+      fontFamily: {
+        sans: ["Ubuntu"]
+      }
     },
   },
   plugins: [],
