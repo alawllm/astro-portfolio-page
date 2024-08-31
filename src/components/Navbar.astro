@@ -12,13 +12,14 @@ const links = [
 
 <header id="header">
   <div
-    class="mx-auto flex items-center justify-between px-2 py-4 transition-colors duration-700 md:px-6 md:py-10">
+    class="mb-4 mt-8 flex items-center justify-between px-2 py-4 transition-colors duration-700 md:px-6 md:py-10"
+  >
     <div><LogoNavbar /></div>
     <nav aria-label="Main Navigation">
       <ul class="flex items-center space-x-8">
         {links.map((link) => <NavbarItem href={link.href} name={link.name} />)}
         <li class="cursor-pointer">
-          <button><ThemeToggler /></button>
+          <button><ThemeToggler /> </button>
         </li>
       </ul>
     </nav>
