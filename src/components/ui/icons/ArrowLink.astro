@@ -2,13 +2,18 @@
 const { href, fill, size } = Astro.props
 ---
 
-<a href={href}>
-  <svg
-    class=`${fill} cursor-pointer`
-    xmlns="http://www.w3.org/2000/svg"
-    height=`${size}px`
-    viewBox="0 -960 960 960"
-    width=`${size}px`
-    ><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"></path></svg
-  >
-</a>
+<button 
+aria-label="arrow link"
+>
+  <a href={href}>
+    <svg
+      class=`${fill} cursor-pointer`
+      xmlns="http://www.w3.org/2000/svg"
+      height=`${size}px`
+      viewBox="0 -960 960 960"
+      width=`${size}px`
+      ><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"
+      ></path></svg
+    >
+  </a>
+</button>

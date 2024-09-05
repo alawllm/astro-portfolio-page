@@ -1,9 +1,15 @@
+---
+const currentYear = new Date().getFullYear()
+---
+
 <footer>
   <div
-    class="mb-4 mt-4 flex flex-row justify-center gap-8 px-2 py-4 md:px-6 md:py-2"
-  >
+    class="mb-4 mt-4 flex flex-row justify-center gap-8 px-2 py-4 md:px-6 md:py-2">
     <p>
-      Coded in 2024 by <a
+      <span>Copyright &#169; {currentYear}</span>
+      <span class="separator">&nbsp;|&nbsp;</span>
+      <span>All rights reserved.</span>
+      <a
         href="https://github.com/alawllm"
         class="text-secondary"
         rel="noopener noreferrer"
