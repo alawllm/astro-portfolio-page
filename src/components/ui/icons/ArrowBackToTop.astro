@@ -1,9 +1,7 @@
-<button
-  class="fixed bottom-4 right-4 cursor-pointer rounded-full bg-black opacity-0 transition-opacity duration-700 hover:bg-secondary dark:bg-white dark:hover:bg-secondary md:bottom-10 md:right-10"
-  id="arrow-back-to-top"
-  aria-label="arrow back to top"
->
-  <a href="#header">
+<a href="#header" id="arrow-back-to-top" aria-label="arrow back to top">
+  <button
+    class="fixed bottom-4 right-4 cursor-pointer rounded-full bg-black opacity-0 transition-opacity duration-700 hover:bg-secondary dark:bg-white dark:hover:bg-secondary md:bottom-10 md:right-10"
+    aria-labelledby="arrow-back-to-top">
     <svg
       class="fill-white dark:fill-black"
       xmlns="http://www.w3.org/2000/svg"
@@ -13,9 +11,9 @@
       ><path
         d="M435.93-144.17v-503.02L206.1-417.36 144.17-480 480-816.2 816.2-480l-62.3 62.64-229.83-229.83v503.02h-88.14Z"
       ></path></svg
-    ></a
+    ></button
   >
-  </button>
+</a>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {

@@ -35,11 +35,11 @@ const { title } = Astro.props
     />
   </head>
   <body
-    class="container mx-auto max-w-screen-lg bg-white px-4 py-2 text-black dark:bg-black dark:text-white md:py-4 text-lg">
+    class="container mx-auto max-w-screen-lg bg-white px-4 py-2 text-lg text-black dark:bg-black dark:text-white md:py-4">
     <Header />
     <slot />
     <Footer />
-    <style>
+    <style is:global>
       :global(html) {
         scroll-behavior: smooth;
       }
@@ -47,6 +47,12 @@ const { title } = Astro.props
         :global(html) {
           scroll-behavior: auto;
         }
+      }
+
+      /* Improve Page speed */
+      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
+      img {
+        content-visibility: auto;
       }
     </style>
   </body>

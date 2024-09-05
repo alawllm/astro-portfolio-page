@@ -5,6 +5,7 @@ const { href, name } = Astro.props
 <li>
   <a
     href={href}
+    aria-label="link to part of the site"
     class="relative text-black transition-all ease-in-out before:absolute before:left-[50%] before:top-5 before:h-[1px] before:w-0 before:origin-center before:bg-secondary before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:right-[50%] after:top-5 after:h-[1px] after:w-0 after:origin-center after:bg-secondary after:transition-[width] after:duration-700 after:ease-in-out hover:text-secondary hover:before:w-[50%] hover:after:w-[50%] dark:text-white dark:hover:text-secondary"
     >{name}</a
   >
