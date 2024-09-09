@@ -7,7 +7,11 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@': '/src',
+        '@layouts': '/src/layouts',
+        '@components': '/src/components',
+        '@pages': '/src/pages',
+        '@assets': '/src/assets',
+        '@utils': '/src/utils',
       },
     },
   },
