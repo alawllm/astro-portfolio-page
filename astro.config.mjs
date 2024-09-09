@@ -5,14 +5,6 @@ export default defineConfig({
   // ...
   integrations: [tailwind()],
   vite: {
-    resolve: {
-      alias: {
-        '@layouts': '/src/layouts',
-        '@components': '/src/components',
-        '@pages': '/src/pages',
-        '@assets': '/src/assets',
-        '@utils': '/src/utils',
-      },
-    },
+    resolve: {},
   },
 })
