@@ -1,14 +1,18 @@
 ---
 import ArrowLink from './icons/ArrowLink.astro'
-
+import { Image } from 'astro:assets'
+import startupIcon from '@assets/startup_icon.png'
 const { name } = Astro.props
 ---
 
 <div
-  class="mx-auto my-2 flex w-1/2 flex-col items-center justify-center text-nowrap rounded-xl border-2 border-solid border-secondary px-8 py-4 text-center text-2xl md:flex-row">
-  <p class="text-2xl">{name}</p>
-  <ArrowLink
-    fill="fill-black dark:fill-white hover:fill-secondary ml-0 md:ml-14"
-    size="40"
+  class="md:h-[200px mx-auto my-6 flex h-[140px] w-[160px] flex-col items-center justify-center text-nowrap rounded-xl border-2 border-solid border-secondary p-6 text-center text-xl font-normal md:w-[180px]">
+  <p class="mb-2 text-wrap text-xl font-bold">{name}</p>
+  <Image
+    src={startupIcon}
+    alt="Project Image"
+    class="h-auto max-w-full"
+    loading="eager"
   />
+  <ArrowLink fill="fill-black dark:fill-white hover:fill-secondary" size="25" />
 </div>
