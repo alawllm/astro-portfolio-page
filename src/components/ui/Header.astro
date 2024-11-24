@@ -1,0 +1,43 @@
+---
+const {
+  headerBigger,
+  headerBiggerSecondary,
+  headerSmaller,
+  headerSmallerSecondary,
+  textSmaller,
+  id = 'hereId',
+} = Astro.props
+---
+
+<header class="mb-10 w-full text-left md:mb-4 md:w-1/3" id={id}>
+  {
+    headerBigger || headerBiggerSecondary ? (
+      <h1
+        id="about-header"
+        class="text-primary mb-2 text-5xl font-bold md:mb-4 md:text-6xl"
+      >
+        {headerBigger}
+        <span class="text-secondary">{headerBiggerSecondary}</span>
+      </h1>
+    ) : (
+      ''
+    )
+  }
+  {
+    headerSmaller || headerSmallerSecondary ? (
+      <h2 id="contact-heading" class="mb-2 text-4xl font-bold md:text-5xl">
+        {headerSmaller}
+        <span class="text-secondary">{headerSmallerSecondary}</span>
+      </h2>
+    ) : (
+      ''
+    )
+  }
+  {
+    textSmaller ? (
+      <p class="text-xl font-semibold md:text-2xl">{textSmaller}</p>
+    ) : (
+      ''
+    )
+  }
+</header>

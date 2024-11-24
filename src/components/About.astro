@@ -1,29 +1,32 @@
 ---
 import { Image } from 'astro:assets'
+import Header from './ui/Header.astro'
 import aboutImage from '../assets/about_image.png'
+import Section from './ui/section.astro'
+
+const textSection = {
+  headerBig: 'Hello I am',
+  headerBigSecondary: 'Anna Mill',
+  description:
+    'I am a software developer specializing in TypeScript and Node.js',
+}
+
+const imgAlt =
+  'Illustration of a programmer in front of a computer screen, designed by pikisuperstar'
 ---
 
-<section
-  class="mb-20 mt-4 flex flex-row flex-wrap items-center justify-evenly px-6"
-  id="about"
-  aria-labelledby="about-heading">
-  <header class="mb-10 w-full text-left md:mb-4 md:w-1/3">
-    <h1
-      id="about-heading"
-      class="mb-2 text-5xl font-bold text-primary md:mb-4 md:text-6xl">
-      Hello, I am <span class="text-secondary">Anna Mill</span>
-    </h1>
-    <p class="text-2xl font-semibold md:text-3xl">
-      and I enjoy designing and building tech pages
-    </p>
-  </header>
-
+<Section id="about" ariaLabel="about-section">
+  <Header
+    headerBigger={textSection.headerBig}
+    headerBiggerSecondary={textSection.headerBigSecondary}
+    textSmaller={textSection.description}
+  />
   <figure class="w-full p-4 md:w-2/3">
     <Image
       src={aboutImage}
-      alt="Illustration of a programmer in front of a computer screen, designed by pikisuperstar"
-      class="h-auto max-w-full"
+      alt={imgAlt}
+      class="h-auto' max-w-full"
       loading="eager"
     />
   </figure>
-</section>
+</Section>
