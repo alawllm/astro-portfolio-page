@@ -1,0 +1,11 @@
+---
+const { text, onClick = null, ariaLabel = 'button action' } = Astro.props
+---
+
+<button
+  aria-label={ariaLabel}
+  onclick={onClick}
+  class="hover:bg-secondary-dark w-fit text-nowrap rounded-lg border-none bg-secondaryDark px-4 py-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-secondary"
+>
+  {text}
+</button>
