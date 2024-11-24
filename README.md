@@ -1,11 +1,20 @@
 # Fast portfolio page
 
-This is a portfolio page built with Astro - content driven Framework, utilizing SSR. a
+This is a portfolio page built with Astro - content driven framework. 
 
 ## Tech stack
 
 - Astro Components
 - TailwindCSS
+
+## Plugins
+
+- Astro SEO
+- Astro Sitemap
+
+## Link live
+
+- [Netlify](https://astro-portfolio-al.netlify.app/)
 
 ## 🧞 Commands
 
@@ -19,7 +28,8 @@ All commands:
 
 ## 👀 Inspiration layout & plugins
 
-- [Astro portfolio template by Veranika Barel](https://github.com/veranikabarel/astro-portfolio)
+- [Astro portfolio](https://github.com/veranikabarel/astro-portfolio)
+- [Astro paper](https://github.com/veranikabarel/astro-portfolio)
 
 ## Static assets
 
