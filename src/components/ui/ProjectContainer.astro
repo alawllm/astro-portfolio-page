@@ -2,7 +2,12 @@
 import ArrowLink from './icons/ArrowLink.astro'
 import { Image } from 'astro:assets'
 import startupIcon from '../../assets/startup_icon.png'
-const { name } = Astro.props
+
+interface ProjectContainerProps {
+  name: string
+}
+
+const { name } = Astro.props as ProjectContainerProps
 ---
 
 <div

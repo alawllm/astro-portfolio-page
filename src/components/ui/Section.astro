@@ -1,5 +1,10 @@
 ---
-const { id, ariaLabel } = Astro.props
+interface SectionProps {
+  id: string
+  ariaLabel: string
+}
+
+const { id, ariaLabel } = Astro.props as SectionProps
 ---
 
 <section

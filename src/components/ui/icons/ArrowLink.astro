@@ -1,5 +1,11 @@
 ---
-const { href, fill, size } = Astro.props
+interface ArrowLinkProps {
+  href: string
+  fill: string
+  size: number
+}
+
+const { href, fill, size } = Astro.props as ArrowLinkProps
 ---
 
 <a href={href} aria-label="arrow icon with a link" id="arrow-link">

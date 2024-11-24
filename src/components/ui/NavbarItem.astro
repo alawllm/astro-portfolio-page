@@ -1,5 +1,10 @@
 ---
-const { href, name } = Astro.props
+interface NavbarItem {
+  href: string
+  name: string
+}
+
+const { href, name } = Astro.props as NavbarItem
 ---
 
 <li>

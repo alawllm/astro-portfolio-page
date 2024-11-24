@@ -1,6 +1,6 @@
 # Fast portfolio page
 
-This is a portfolio page built with Astro - content driven framework. 
+This is a portfolio page built with Astro - content driven framework.
 
 ## Tech stack
 
@@ -20,11 +20,11 @@ This is a portfolio page built with Astro - content driven framework.
 
 All commands:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
+| Command         | Action                                      |
+| :-------------- | :------------------------------------------ |
+| `npm install`   | Installs dependencies                       |
+| `npm run dev`   | Starts local dev server at `localhost:4321` |
+| `npm run build` | Build your production site to `./dist/`     |
 
 ## 👀 Inspiration layout & plugins
 
