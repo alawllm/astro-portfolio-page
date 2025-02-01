@@ -2,15 +2,19 @@
 
 This is a portfolio page built with Astro - content driven framework.
 
+## Features
+
+- SEO-optimization
+- light / dark mode
+- type-safe markdown
+
+
 ## Tech stack
 
 - Astro Components
 - TailwindCSS
-
-## Plugins
-
-- Astro SEO
-- Astro Sitemap
+- TypeScript
+- Styling with TailwindCSS
 
 ## Link live
 
